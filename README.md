@@ -9,7 +9,7 @@ Quelques points techniques :
    Import de BrowserRouter et Route
 3. Installation de route parameters et récupération de ces routes au sein de composants
    <Route path=”” component={} />
-4. Utilisation de Bootstrap
+4. Utilisation de Switch tags
 5. Utilisation de la fonction componentDidMount()
 6. Utilisation et transfert de props
 7. Utilisation d’objets State et de setState()
