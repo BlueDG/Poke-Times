@@ -1,69 +1,26 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Un blog qui présente en page d’accueil sous sa barre de navigation la liste de ses articles.
 
-## Available Scripts
+Ces articles sont présentés par un résumé, un titre et une image.
 
-In the project directory, you can run:
+Quelques points techniques :
 
-### `npm start`
+1. Architecture React composée à l’aide de Classes car utilisation de livecycle hooks
+2. Utilisation de Router React donc installation de react-router-dom
+   Import de BrowserRouter et Route
+3. Installation de route parameters et récupération de ces routes au sein de composants
+   <Route path=”” component={} />
+4. Utilisation de Bootstrap
+5. Utilisation de la fonction componentDidMount()
+6. Utilisation et transfert de props
+7. Utilisation d’objets State et de setState()
+8. Récupération de données via des API REST tiers à l’aide de JSONPlaceholder
+9. Installation et utilisation de la librairie de requêtes http Axios
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Les requêtes sont asynchrones. Nous utilisons des promesses.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# Poke-Times
+10. Utilisation de callback functions pour nos requêtes Axios.
+11. Utilisation de la méthode .slice afin de ne pas afficher l’ensemble des données récupérées.
+12. Utilisation de ternary operators (opérateurs ternaires) et fonctions fléchées
+13. Ajout et utilisation de materialize css dans l’html
+14. Utilisation de Link, NavLink et withRouter depuis react-router-dom
+15. Ajout de redirections programmées et de higher order components
